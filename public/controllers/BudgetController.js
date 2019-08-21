@@ -27,10 +27,9 @@ import allUIServices from '../services/allUIServices.js';
             
     }   
     export const ctrlDeleteItem = (event) => {
-        let itemID = event.target.parentNode.parentNode.parentNode.id;
+        let itemID = event.target.parentNode.parentNode.parentNode.parentNode.id;
     
         if(itemID) {
-    
             let splitID = itemID.split('-');
             let type = splitID[0];
             let ID = parseInt(splitID[1]);
